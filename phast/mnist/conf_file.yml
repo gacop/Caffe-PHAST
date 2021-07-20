@@ -1,0 +1,223 @@
+- backward_conv_conv1:
+  major_block_size: 32
+  minor_block_size: 4
+  scheduling_strategy: 2
+  n_thread: 8
+- backward_conv_conv2:
+  major_block_size: 8
+  minor_block_size: 4
+  scheduling_strategy: 1
+  n_thread: 16
+- backward_conv_bottom_conv1:
+  major_block_size: 1
+  minor_block_size: 32
+  scheduling_strategy: 1
+  n_thread: 16
+- backward_conv_bottom_conv2:
+  major_block_size: 4
+  minor_block_size: 8
+  scheduling_strategy: 2
+  n_thread: 8
+- backward_bias1_conv1:
+  major_block_size: 1
+  minor_block_size: 32
+  scheduling_strategy: 1
+  n_thread: 1
+- backward_bias1_conv2:
+  major_block_size: 32
+  minor_block_size: 4
+  scheduling_strategy: 1
+  n_thread: 1
+- backward_bias2_conv1:
+  major_block_size: 16
+  minor_block_size: 8
+  scheduling_strategy: 2
+  n_thread: 4
+- backward_bias2_conv2:
+  major_block_size: 4
+  minor_block_size: 16
+  scheduling_strategy: 2
+  n_thread: 2
+- backward_transp_conv1:
+  major_block_size: 16
+  minor_block_size: 2
+  scheduling_strategy: 1
+  n_thread: 1
+- backward_transp_conv2:
+  major_block_size: 4
+  minor_block_size: 8
+  scheduling_strategy: 2
+  n_thread: 1
+- backward_wpad_conv1:
+  major_block_size: 2
+  minor_block_size: 16
+  scheduling_strategy: 1
+  n_thread: 4
+- backward_wpad_conv2:
+  major_block_size: 8
+  minor_block_size: 32
+  scheduling_strategy: 1
+  n_thread: 2
+- backward_tpad_conv1:
+  major_block_size: 1
+  minor_block_size: 32
+  scheduling_strategy: 2
+  n_thread: 8
+- backward_tpad_conv2:
+  major_block_size: 4
+  minor_block_size: 8
+  scheduling_strategy: 1
+  n_thread: 1
+- forward_conv_conv1:
+  major_block_size: 2
+  minor_block_size: 16
+  scheduling_strategy: 2
+  n_thread: 16
+- forward_conv_conv2:
+  major_block_size: 16
+  minor_block_size: 2
+  scheduling_strategy: 1
+  n_thread: 16
+- pool_for_each1_pool1:
+  major_block_size: 1
+  minor_block_size: 32
+  scheduling_strategy: 1
+  n_thread: 4
+- pool_for_each1_pool2:
+  major_block_size: 16
+  minor_block_size: 2
+  scheduling_strategy: 1
+  n_thread: 16
+- pool_for_each2_pool1:
+  major_block_size: 2
+  minor_block_size: 16
+  scheduling_strategy: 2
+  n_thread: 2
+- pool_for_each2_pool2:
+  major_block_size: 1
+  minor_block_size: 32
+  scheduling_strategy: 1
+  n_thread: 2
+- pool_for_each3_pool1:
+  major_block_size: 32
+  minor_block_size: 1
+  scheduling_strategy: 1
+  n_thread: 8
+- pool_for_each3_pool2:
+  major_block_size: 16
+  minor_block_size: 2
+  scheduling_strategy: 1
+  n_thread: 4
+- pool_for_each4_pool1:
+  major_block_size: 1
+  minor_block_size: 32
+  scheduling_strategy: 1
+  n_thread: 16
+- pool_for_each4_pool2:
+  major_block_size: 2
+  minor_block_size: 32
+  scheduling_strategy: 2
+  n_thread: 2
+- pool_fill1_pool1:
+  major_block_size: 1
+  minor_block_size: 32
+  scheduling_strategy: 2
+  n_thread: 2
+- pool_fill1_pool2:
+  major_block_size: 1
+  minor_block_size: 32
+  scheduling_strategy: 2
+  n_thread: 1
+- sm_loss_acc_for_each1:
+  major_block_size: 1
+  minor_block_size: 32
+  scheduling_strategy: 2
+  n_thread: 4
+- sm_loss_acc_for_each2:
+  major_block_size: 1
+  minor_block_size: 32
+  scheduling_strategy: 2
+  n_thread: 2
+- sm_loss_for_each:
+  major_block_size: 1
+  minor_block_size: 32
+  scheduling_strategy: 1
+  n_thread: 16
+- sm_for_each4:
+  major_block_size: 1
+  minor_block_size: 32
+  scheduling_strategy: 1
+  n_thread: 8
+- sm_for_each5:
+  major_block_size: 1
+  minor_block_size: 32
+  scheduling_strategy: 1
+  n_thread: 8
+- sm_for_each6:
+  major_block_size: 1
+  minor_block_size: 32
+  scheduling_strategy: 2
+  n_thread: 4
+- sm_transpose_ikj:
+  major_block_size: 1
+  minor_block_size: 32
+  scheduling_strategy: 2
+  n_thread: 2
+- sm_for_each3:
+  major_block_size: 2
+  minor_block_size: 32
+  scheduling_strategy: 1
+  n_thread: 1
+- dot_prod1_ip1:
+  major_block_size: 2
+  minor_block_size: 16
+  scheduling_strategy: 2
+- for_each1_ip1:
+  major_block_size: 1
+  minor_block_size: 32
+  scheduling_strategy: 2
+- dot_prod3_ip1:
+  major_block_size: 8
+  minor_block_size: 4
+  scheduling_strategy: 1
+- for_each3_ip1:
+  major_block_size: 128
+  minor_block_size: 2
+  scheduling_strategy: 1
+- dot_prod4_ip1:
+  major_block_size: 8
+  minor_block_size: 4
+  scheduling_strategy: 2
+- for_each4_ip1:
+  major_block_size: 4
+  minor_block_size: 8
+  scheduling_strategy: 2
+- dot_prod1_ip2:
+  major_block_size: 2
+  minor_block_size: 16
+  scheduling_strategy: 2
+- for_each1_ip2:
+  major_block_size: 4
+  minor_block_size: 32
+  scheduling_strategy: 2
+- dot_prod3_ip2:
+  major_block_size: 1
+  minor_block_size: 32
+  scheduling_strategy: 1
+- for_each3_ip2:
+  major_block_size: 1
+  minor_block_size: 32
+  scheduling_strategy: 2
+- dot_prod4_ip2:
+  major_block_size: 8
+  minor_block_size: 4
+  scheduling_strategy: 2
+- for_each4_ip2:
+  major_block_size: 1
+  minor_block_size: 32
+  scheduling_strategy: 2
+- adam:
+  major_block_size: 8
+  minor_block_size: 8
+  scheduling_strategy: 2
+  n_thread: 8
