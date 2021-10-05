@@ -1,5 +1,7 @@
 # Caffe-PHAST
 
+[![DOI](https://zenodo.org/badge/382280372.svg)](https://zenodo.org/badge/latestdoi/382280372)
+
 Caffe-PHAST is a PHAST implementation of the Caffe framework (https://github.com/BVLC/caffe) developed by the University of Murcia and the University of Siena.
 
 The PHAST Library (https://dl.acm.org/doi/abs/10.1109/TPDS.2018.2855182) is a C++ high-level library for easily programming both multi-core CPUs and NVIDIA GPUs. PHAST code can be written once and targeted to different devices via a single macro at compile time. This macro generates either CPU or NVIDIA GPU executables.
