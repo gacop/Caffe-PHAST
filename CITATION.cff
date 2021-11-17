@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If this software is relevant for your research, please cite it as below."
+authors:
+- family-names: "Pablo Antonio"
+  given-names: "Martínez"
+  orcid: "https://orcid.org/0000-0002-4391-2451"
+- family-names: "Biagio"
+  given-names: "Peccerillo"
+  orcid: "https://orcid.org/0000-0002-4998-0092"
+- family-names: "Sandro"
+  given-names: "Bartolini"
+  orcid: "https://orcid.org/0000-0002-7975-3632"
+- family-names: "José Manuel"
+  given-names: "García"
+  orcid: "https://orcid.org/0000-0002-6388-2835"
+- family-names: "Gregorio"
+  given-names: "Bernabé"
+  orcid: "https://orcid.org/0000-0002-7265-3508"
+title: "Caffe-PHAST"
+version: 2.0
+doi: 10.5281/zenodo.5549432
+date-released: 2021-07-20
+url: "https://github.com/gacop/Caffe-PHAST"
